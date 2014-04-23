@@ -17,6 +17,12 @@ colnames(Data) <- features[,2]
 ColumnsNeeded <- append(grep("mean[^Freq]",names(Data)),grep("std",names(Data)))
 DataRequired <- Data[,ColumnsNeeded] #DataRequired is the result data set of extraction
 
+##Because in some columns, name should contain one "Body" instead of two "Body", substitute first 
+##"Body" with "".
+for (i in 1:ncol(DataRequired)){
+        names(DataRequired)[i]<-sub("fBodyBody","fBody",names(DataRequired)[i])
+}
+
 ## Merge "activityTest" and "activityTrain" into ActivityID. 
 ActivityID <- rbind(activityTest,activityTrain)
 
