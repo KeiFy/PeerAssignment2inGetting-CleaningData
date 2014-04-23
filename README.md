@@ -1,6 +1,5 @@
 ==================================================================
-Tidy Data Set Generation From
-Human Activity Recognition Using Smartphones Dataset
+Tidy Data Set Generation From Human Activity Recognition Using Smartphones Dataset
 ==================================================================
 By KeiFy 2:42 PM 4/23/2014
 
@@ -35,13 +34,12 @@ TidyDataSet <- read.table("Tidy Data Set.txt",header=T)
 CodeBook of "Tidy Data Set.txt"
 ==================================================================
 ##Variables
-* SubjectID
-	contain numbers from 1 to 30. Each number represent one individual
-* ActivityID:1=WALKING;2=WALKING_UPSTAIRS;3=WALKING_DOWNSTAIRS;
+* SubjectID:   contain numbers from 1 to 30. Each number represent one individual
+* ActivityID:  1=WALKING;2=WALKING_UPSTAIRS;3=WALKING_DOWNSTAIRS;
 4=SITTING
 5;5=STANDING;6=LAYING
 
-* Activity:six strings:WALKING,WALKING_UPSTAIRS
+* Activity:    WALKING,WALKING_UPSTAIRS
 ,WALKING_DOWNSTAIRS
 ,SITTING
 ,STANDING
