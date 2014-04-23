@@ -37,7 +37,7 @@ CodeBook of "Tidy Data Set.txt"
 * SubjectID:   contain numbers from 1 to 30. Each number represent one individual
 * ActivityID:  1=WALKING;2=WALKING_UPSTAIRS;3=WALKING_DOWNSTAIRS;
 4=SITTING
-5;5=STANDING;6=LAYING
+;5=STANDING;6=LAYING
 
 * Activity:    WALKING,WALKING_UPSTAIRS
 ,WALKING_DOWNSTAIRS
