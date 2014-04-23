@@ -6,16 +6,16 @@ By KeiFy 2:42 PM 4/23/2014
 
 This README.md contains CodeBook and explains how to use run_analysis.R to obtain the average of each variable for each activity and each subject from Human Activity Recognition Using Smartphones Dataset,variables being the measurements on the mean and standard deviation for each measurement.
 
-Function can be divided into parts:
+##Function can be divided into parts:
 1. Load the files from Human Activity Recognition Using Smartphones Dataset.
 2. Merge dataset of train and test.
 3. Extract measurements on the mean and standard deviation and names them properly
 4. Calculate average of these measurements and put the results together as a dataset
 5. Export new dataset as "Tidy Data Set.txt"
 
-Important Notes:
+##Important Notes:
 
-In order to run the run_analysis.R sucessfully, you need to have these files from the Human Activity Recognition Using Smartphones Dataset in the working directory: 
+1.In order to run the run_analysis.R sucessfully, you need to have these files from the Human Activity Recognition Using Smartphones Dataset in the working directory: 
 "X_test.txt"
 "X_train.txt"
 "y_test.txt"
@@ -27,7 +27,7 @@ In order to run the run_analysis.R sucessfully, you need to have these files fro
 You can download these files from 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-After sucessfully having "Tidy Data Set.txt", if you want to load this new data set into R or R-Studio, first put the file into working directory and run this line:
+2.After sucessfully having "Tidy Data Set.txt", if you want to load this new data set into R or R-Studio, first put the file into working directory and run this line:
 
 TidyDataSet <- read.table("Tidy Data Set.txt",header=T)
 
@@ -37,24 +37,14 @@ CodeBook of "Tidy Data Set.txt"
 ##Variables
 * SubjectID
 	contain numbers from 1 to 30. Each number represent one individual
-* ActivityID:
-	1=WALKING
-	
-2=WALKING_UPSTAIRS
-	
-3=WALKING_DOWNSTAIRS
-	
+* ActivityID:1=WALKING;2=WALKING_UPSTAIRS;3=WALKING_DOWNSTAIRS;
 4=SITTING
-5
-	5=STANDING
-	
-6=LAYING
+5;5=STANDING;6=LAYING
 
-* Activity:
-	contain six strings:WALKING, WALKING_UPSTAIRS
-, WALKING_DOWNSTAIRS
-, SITTING
-, 				STANDING
+* Activity:six strings:WALKING,WALKING_UPSTAIRS
+,WALKING_DOWNSTAIRS
+,SITTING
+,STANDING
 ,LAYING
 
 * Average.tBodyAcc.mean.X
@@ -124,7 +114,7 @@ CodeBook of "Tidy Data Set.txt"
 * Average.fBodyBodyGyroMag.std
 * Average.fBodyBodyGyroJerkMag.std
 
-The Naming Rule in Tidy Data set.txt basically follow Human Activity Recognition Using Smartphones Dataset:
+1.The Naming Rule in Tidy Data set.txt basically follow Human Activity Recognition Using Smartphones Dataset:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -153,7 +143,7 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-Besides these, explanations of "mean", "std", "Average":
+2.Besides these, explanations of "mean", "std", "Average":
 1."mean" represent means of one measurement of one individual in one specific activity
 2."std" represent standard deviation of one measurement of one individual in one specific activity
 3."Average" represent average of all means or stds of one individual in one specific activity
