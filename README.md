@@ -75,9 +75,9 @@ CodeBook of "Tidy Data Set.txt"
 * Average.fBodyGyro.mean.Y
 * Average.fBodyGyro.mean.Z
 * Average.fBodyAccMag.mean
-* Average.fBodyBodyAccJerkMag.mean
-* Average.fBodyBodyGyroMag.mean
-* Average.fBodyBodyGyroJerkMag.mean
+* Average.fBodyAccJerkMag.mean
+* Average.fBodyGyroMag.mean
+* Average.fBodyGyroJerkMag.mean
 * Average.tBodyAcc.std.X
 * Average.tBodyAcc.std.Y
 * Average.tBodyAcc.std.Z
@@ -108,9 +108,9 @@ CodeBook of "Tidy Data Set.txt"
 * Average.fBodyGyro.std.Y
 * Average.fBodyGyro.std.Z
 * Average.fBodyAccMag.std
-* Average.fBodyBodyAccJerkMag.std
-* Average.fBodyBodyGyroMag.std
-* Average.fBodyBodyGyroJerkMag.std
+* Average.fBodyAccJerkMag.std
+* Average.fBodyGyroMag.std
+* Average.fBodyGyroJerkMag.std
 
 1.The Naming Rule in Tidy Data set.txt basically follow Human Activity Recognition Using Smartphones Dataset:
 
@@ -148,7 +148,7 @@ fBodyGyroJerkMag
 
 ##Transformations performed to clean up the data
 1. Merge dataset of train and test.
-2. Names the merged dataset with names from "features.txt"
+2. Names the merged dataset with names from "features.txt" with proper names (e.g. deleting unnecessary "Body")
 3. According to requirements, extract measurements on the mean and standard deviation.
-4. Calculate average of these measurements and put the results together as a dataset
+4. Calculate average of these measurements and put the results together as a new dataset
 
